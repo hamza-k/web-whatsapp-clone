@@ -1,0 +1,39 @@
+{
+  "name": "my-blog",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.3.4",
+    "lodash": "^4.17.19",
+    "meteor-node-stubs": "^0.4.1",
+    "moment": "^2.27.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-flip-move": "^3.0.4",
+    "react-fontawesome": "^1.7.1",
+    "react-moment": "^0.9.7",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.1.1"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.tsx",
+      "server": "server/main.ts"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "@types/meteor": "^1.4.27",
+    "@types/node": "^11.13.5",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "tslint": "^5.16.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.4"
+  }
+}
